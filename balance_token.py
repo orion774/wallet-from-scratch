@@ -10,7 +10,7 @@ from internal.utilities import ADDRESS_PATH, keccak256
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--token-symbol", default="USDC")
+    parser.add_argument("--token-symbol", default="TestUSDC")
     args = parser.parse_args()
 
     token_contract_address = TOKEN_SYMBOL_TO_CONTRACT_ADDRESS[args.token_symbol]
