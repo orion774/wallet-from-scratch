@@ -18,7 +18,8 @@ def rpc_call(method: str, params: list):
 
     response = requests.post(RPC_URL, json=body)
     response_json = response.json()
-    assert "error" not in response_json
+    if "error" in response_json:
+        raise RuntimeError(f"RPC call failed: {response_json['error']}")
 
     return response_json["result"]
 
