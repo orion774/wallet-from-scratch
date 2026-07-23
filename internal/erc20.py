@@ -2,8 +2,8 @@ from internal.remote_procedure_call import rpc_call
 from internal.utilities import decode_abi_string, keccak256
 
 TOKEN_SYMBOL_TO_CONTRACT_ADDRESS = {
-    # USDC token contract on Ethereum mainnet.
-    "USDC": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+    # TestUSDC token contract on Ethereum Sepolia testnet.
+    "TestUSDC": "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238"
 }
 
 def call_erc20(

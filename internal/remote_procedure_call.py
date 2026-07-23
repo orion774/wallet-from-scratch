@@ -1,13 +1,11 @@
 import requests
 
-# Free public Ethereum mainnet JSON-RPC endpoint.
+# Free public Ethereum Sepolia JSON-RPC endpoint.
 # Public RPCs are fine for learning, but they can be rate-limited or unavailable.
-RPC_URL = "https://ethereum-rpc.publicnode.com"
+RPC_URL = "https://eth-sepolia-testnet.api.pocket.network"
 # Backups:
-# https://eth.llamarpc.com
-# https://1rpc.io/eth
-# https://public-eth.nownodes.io
-
+# https://1rpc.io/sepolia
+# or See https://chainlist.org/chain/11155111
 
 def rpc_call(method: str, params: list):
     """Call an Ethereum JSON-RPC method and return its result."""

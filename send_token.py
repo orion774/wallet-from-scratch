@@ -13,7 +13,7 @@ from send_eth import CHAIN_ID, TRANSACTION_TYPE
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--token-symbol", default="USDC")
+    parser.add_argument("--token-symbol", default="TestUSDC")
     parser.add_argument("--to-address", required=True)
     parser.add_argument("--send-value", type=int, default=1)
     args = parser.parse_args()

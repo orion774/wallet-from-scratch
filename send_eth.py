@@ -5,7 +5,7 @@ from internal.remote_procedure_call import rpc_call
 from internal.utilities import ADDRESS_PATH, WEI_PER_ETH, GWEI
 
 
-CHAIN_ID = 1
+CHAIN_ID = 11155111 # Sepolia testnet
 GAS_LIMIT = 21000
 TRANSACTION_TYPE = b"\x02"
 
